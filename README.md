@@ -1,3 +1,3 @@
 # Word-Morph
 
-Change one word into another by changing one letter at a time. Both words must be valid.
+Change a five-letter word into another five-letter word by changing one letter at a time. Both words must be valid.
