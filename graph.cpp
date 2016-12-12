@@ -65,7 +65,7 @@ std::ostream & operator<<(std::ostream & os, const graph & g){
     */
     return os;
 }
-/*
+
 std::istream & operator>>(std::istream & is, graph & g){
     std::size_t n, m, v, w;
     is >> n >> m;
@@ -79,7 +79,7 @@ std::istream & operator>>(std::istream & is, graph & g){
     }
     return is;
 }
-*/
+
 std::size_t graph::ncc() const{
     std::vector<bool> visited(n(), false);
     std::size_t ans(0);
@@ -173,7 +173,7 @@ bool graph::is_bipartite() const{
     return true;
 }
 
-std::vector<std::size_t> graph::shortest_path(std::size_t source, std::size_t dest){
+std::vector<std::size_t> graph::shortest_path (std::size_t source, std::size_t dest){
     assert (source<n() && dest<n());
     std::vector<int> parent(n(),-1);
     std::vector<bool> visited(n(), false);
